@@ -1,12 +1,8 @@
-const jcloud = {
-  name: "jcloud",
-  age: 30,
-  gender: "male",
-};
+import { people } from "./db";
 
 const resolvers = {
   Query: {
-    person: () => jcloud,
+    people: () => people,
   },
 };
 
